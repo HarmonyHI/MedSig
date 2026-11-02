@@ -1,0 +1,123 @@
+.absoluteTop{
+    width: 100%;
+    min-height: 100px;
+    /*background-color: #27dc19;*/
+    position: fixed;
+    top:0;
+    display: flex;
+    z-index: 999;
+    min-width: 500px;
+    backdrop-filter: blur(20px);
+}
+
+.page{
+    display: flex; /* 设定为Flexbox布局 */
+    flex-direction: column; /* 设定主轴为垂直方向 */
+    height: 100%;
+}
+.pageTop{
+    width: auto;
+    min-height: 100px;
+    background-image: url("/src/assets/0f83a2.jpg");
+}
+.routerView{
+    background-color: #ffffff;
+    border-radius: 20px;
+    /*display: inline-block;*/
+    margin-top: 80px;
+    margin-bottom: 50px;
+    overflow-y: auto;
+    height: 100%;
+    transition: box-shadow 0.3s ease-in-out;
+}
+.routerView:hover{
+    box-shadow: 0 8px 32px 0 rgb(252, 212, 212);
+}
+.pageCenter{
+    overflow: hidden;
+    width: auto;
+    background-image: url("/src/assets/0f83a2.jpg");
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    padding-top: 0;
+    padding-bottom: 50px;
+    min-height:800px;
+}
+.pageBottom{
+    width: auto;
+    background-color: #e9c6c8;
+    backdrop-filter: blur(20px);
+
+    height:auto;
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+.pageBottom::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.5); /* 半透明覆盖层 */
+    backdrop-filter: blur(20px);
+    z-index: 0; /* 确保覆盖层在背景图片之上，内容之下 */
+}
+.pageBottomChild{
+    padding: 19px;
+    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.26);
+    left: 50%;
+    top: 88%;
+    transform: translateX(-50%);
+    position: fixed;
+    z-index: 999;
+    font-size: 17px;
+    background-color: rgba(215, 46, 46, 0.19);
+    color: #FFFFFF;
+    text-align: center;
+    font-family: 钉钉进步体, serif;
+    border-radius: 15px;
+}
+.lineStyleChild{
+    display:inline-block;
+    margin-right: 20px;
+}
+.absoluteCenterBottom{
+    box-shadow: 0 8px 32px 0 rgba(0, 157, 255, 0.26);
+    left: 50%;
+    top: 85%;
+    min-width: 650px;
+    transform: translateX(-50%);
+    position: fixed;
+    z-index: 999;
+    margin: auto;
+}
+.relativeRight{
+    background-color: rgba(255, 255, 255, 0);
+    margin-right: 2px;
+    top: 37px;
+    right: 30px;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 999;
+    color: #FFFFFF;
+}
+.relativeLeft{
+    background-color: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(10px);
+    margin-left: 2px;
+    top: 0;
+    left: 200px;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 999;
+}
+.personal_text{
+    color: #000000;
+}
